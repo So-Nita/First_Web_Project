@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400&family=Exo+2&family=Hanuman&family=Poppins&family=Roboto&display=swap');
+
+:root{
+    --font-poppin: 'Poppins', sans-serif; 
+    --font-roboto: 'Roboto', sans-serif;
+    --dark: #313537;
+}
+*{
+    padding: 0; margin: 0;
+}
+.main{
+    height: 500vh;
+    background-color: #f5f5f5;
+}
+.con-1{
+    height: 100px;
+    padding: 20px 0;
+    background-color: #313537;
+}
+.con-1 i{
+    font-size: 18px;
+    color: rgb(146, 146, 146);
+}
+.con-3{
+    height: 560px;
+
+}
+.con-3 .text{
+    top: 150px;
+    left: 240px;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    white-space: nowrap;
+}
+.con-3 p{
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+    color: rgb(83, 83, 83);
+    letter-spacing: 2px;
+    font-family: var(--font-roboto);
+}
+.con-3 h1{
+    font-size: 34px;
+    line-height: 41px;
+    font-weight: 200;
+    color: rgb(49, 53, 55);
+}
+.con-3 button{
+    border: none;
+    height: 32px; width: 100px;
+}
+.con-3 a{
+    line-height: 10px;
+    padding: 6px 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 12px;
+}
