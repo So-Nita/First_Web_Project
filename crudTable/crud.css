@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400&family=Exo+2&family=Hanuman&family=Poppins&family=Roboto&display=swap');
+*{ 
+    font-family: 'Poppins', sans-serif;
+}
+form{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+}
+form input{
+    height: 25px;
+    margin-top: 6px;
+    width: 45%;
+}
+.allBtn{
+    width: 94%; 
+    height: 40px;
+    padding: 3px 20px 0 20px;
+    margin: auto;
+}
+table{
+    border-collapse: collapse;
+    width: 94%;
+    margin: auto;
+}
+table th{
+    height: 35px; font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #328bd8; 
+    color: #fff;
+}
+table td{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid white;
+
+}

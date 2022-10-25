@@ -1,0 +1,1475 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400&family=Exo+2&family=Hanuman&family=Poppins&family=Roboto&display=swap');
+:root{
+    --pink: #e58487;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn-outline-primary{
+    background-color: var(--pink) !important;
+    border-color: var(--pink) !important;
+    color: #fff !important;
+}
+*{
+    padding: 0; margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 500vh;
+}
+#myBtn{
+    position: fixed;
+    height: 52px; width: 55px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    background-color: #b8b6b6;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+}
+#myBtn.active{
+    display: block;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+.navbar{
+    height: 100px;
+    top: 0;
+    z-index: 1;
+}
+.navbar i{
+    position: sticky;
+    color: #b8b6b6;
+    font-size: 20px;
+}
+/*  */
+/* Drop down */
+.Drop-down{
+    width: 300px;
+    height: 540px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    display: none;
+    transition: all 3s;
+    padding: 20px 15px 0 15px;
+    background-color: #fff !important;
+}
+.Drop-down .title{
+    font-size: 18px;
+    color: #e58487;
+    font-weight: 600;
+    width: 100%;
+    padding-bottom: 15px;
+    position: relative;
+    border-bottom: 2px solid #eeeeee;
+}
+.Drop-down .title span{
+    font-size: 20px;
+    color: #e58487;
+}
+.Drop-down .title i{
+    font-size: 25px;
+    color: #202020;
+    right: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.Drop-down .menu-down{
+    height: 500px;
+    width: 100%;
+    margin-top: 4px;
+}
+.Drop-down .menu-down ul{
+    width: 100%;
+    height: 28px;  
+}
+.Drop-down .menu-down ul li{
+    width: 100%;
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+    margin-left: -10px;
+    border-bottom: 1px solid #eeeeee;
+}
+.Drop-down .menu-down ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #202020;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.Drop-down .menu-down i{
+    position: absolute;
+    right: 0px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Drop-down .choose{
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+.Drop-down .choose .language, .currency{
+    color: #202020;
+    font-size: 13px;
+    position: relative;
+}
+.Drop-down .choose i{
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+/*  */
+.con-2{
+    height: 50px;
+    width: 100%;
+    background-color: #e58487;
+    z-index: 1;
+    margin-top: 100px;
+}
+.con-2 ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 4px;
+}
+.con-2 ul li{
+    display: inline;
+}
+.con-2 ul li a{
+    text-decoration: none;
+    padding: 0 22px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.con-3{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.con-3 .carousel-item{
+    height: 550px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.con-3 .slide-1{
+    background-image: url("https://loopinfosol.in/themeforest/ekka-html-v32/ekka-html/assets/images/main-slider-banner/5.jpg");
+}
+.con-3 .slide-2{
+   background-image: url("https://loopinfosol.in/themeforest/ekka-html-v32/ekka-html/assets/images/main-slider-banner/6.jpg"); 
+}
+.con-3 .descrip{
+    width: 530px;
+    height: 300px;
+    margin-top: 125px;
+    margin-left: 150px;
+}
+.con-3 .descrip h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #e58487;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+}
+.con-3 .descrip hr{
+    width: 90px;
+    height: 2.5px;
+    margin-top: -10px;
+    background-color: palevioletred;
+}
+.con-2 .descrip h1{
+    font-size: 40px;
+    color: #202020;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 35px;
+}
+.con-3 .descrip p{
+    font-size: 16px;
+    color: #777777;
+}
+.con-3 .descrip button{
+    height: 50px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e58487;
+    border: none;
+    border-radius: 0;
+}
+.con-3 .descrip button:hover{
+    background-color: #555555;
+    color: #fff;
+}
+/* Contain 4 */
+.con-4{
+    height: 530px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.con-4 h2{
+    font-size: 24px;
+    font-weight: 650;
+    color: #202020;
+    text-transform: uppercase;
+    text-align: center
+}
+.con-4 hr{
+    width: 170px;
+    margin: auto;
+    height: 3px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #e58487;
+}
+.Slide{
+    width: 90%;
+    height: 366px;
+    margin: auto;
+    margin-bottom: 0;
+}
+.Slide .sli{
+    width: 310px;
+    height: 400px;
+    margin-right: 10px;
+    background: #f4f4f4;
+    border-radius: 4px;
+    z-index: 1;
+}
+.con-4 .image{
+    width: 100%;
+    height: 250px;
+    background-color: #f5f5f5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con-4 .image .img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
+    width: 100%;
+    height: 100%;
+    background-size: 90% 360px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.con-4 .image .coner-left{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    left: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    color: #e58487;
+    text-transform: uppercase;
+}
+.con-4 .image .coner-right{
+    position: absolute;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #e58487;
+    color: #fff;
+    right: 10px;
+    top: 10px;
+}
+.con-4 .image .cart-1{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    opacity: 0;
+}
+.con-4 .image .cart-1 i{
+    background-color:#444444B3;
+    padding: 6px 10px;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.con-4 .image .cart-1 i:hover{
+    background-color: #e58487;
+    color: #fff;
+}
+.con-4 .image .cart-2{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    bottom: 0;
+    opacity: 0;
+}
+.con-4 .image .cart-2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 600;
+    padding: 0 10px;
+    background-color:#444444B3;
+}
+.con-4 .image .cart-2 a:hover{
+    background-color:#444444;
+}
+.con-4 .image .cart-2 i{
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+.con-4 .image:hover .cart-1{
+    opacity: 1;
+    top: 45%;
+    transition: all 1s ease;
+}
+.con-4 .image:hover .cart-2{
+    opacity: 1;
+    bottom: 10%;
+    transition: all 1s ease;
+}
+.con-4 .price{
+    width: 100%;
+    height: 110px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #f5f5f5;
+}
+.con-4 .price .star{
+    width: 100%;
+    height: 15px;
+    margin-bottom: 9px;
+}
+.con-4 .price .star .star-1, .star-2, .star-3, .star-4, .star-5{
+    font-size: 14px;
+    color: #ffc107;
+    padding-bottom: 6px;
+    padding-right: 4px;
+}
+.con-4 .price .star .star-5{
+    font-size: 14px;
+    color: lightgray;
+}
+.con-4 .price a{
+    font-size: 16px;
+    color: #777777;
+    text-decoration: none;
+}
+.con-4 .price a:hover{
+    color: #e58487;
+    text-decoration: none;
+}
+.con-4 .price .span{
+    color: #202020;
+    font-weight: 700;
+    font-size: 19px;
+    margin-right: 7px;
+    margin-top: 4px;
+}
+.con-4 .price s{
+    font-size: 19px;
+    text-decoration: line-through;
+    color: #777;
+    font-weight: 400;
+}
+.con-4 .image .img-1{
+    background-image: url("https://zandokh.com/image/catalog/products/2022-09/4222209003/Routine/PP/Knitted-Cardigan%20(34).jpg");
+}
+.con-4 .image .img-2{
+    background-image: url("https://zandokh.com/image/catalog/products/2022-05/41432/Kids-Long-Sleeves-Checked-Shirt%20(2).jpg");
+}
+.con-4 .image .img-3{
+    background-image: url("https://zandokh.com/image/catalog/products/2022-08/43199/BK/10S22BAG005%20BLACK%20(3).jpg");
+}
+.con-4 .image .img-4{
+    background-image: url("https://zandokh.com/image/catalog/products/2021-07/37705/Tote-Backpack-Bags%20(5).jpg");
+}
+.con-4 .image .img-5{
+    background-image: url("https://zandokh.com/image/catalog/products/2021.03/36148/New/Kids-Short-Sleeves-Ribbed-T-Shirt%20(6).jpg");
+}
+.con-4 .image .img-6{
+    background-image: url("https://zandokh.com/image/catalog/products/2022-05/42438/TEN11-Crossbody-Mini%20-Bags%20(7).jpg");
+}
+
+/* contain 5 */
+.con-5{
+    height: 480px;
+    width: 100%;
+    background-image: url("https://loopinfosol.in/themeforest/ekka-html-v32/ekka-html/assets/images/offer-image/offer_bg_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 70px;
+}
+.con-5 .ad-title{
+    width: 520px;
+    height: 230px;
+}
+.con-5 .ad-title h2{
+    font-size: 26px;
+    color: #e58487;
+    font-weight: bold;
+}
+.con-5 .ad-title h1{
+    font-size: 46px;
+    color: #202020;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.con-5 .ad-title span{
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+}
+.con-5 .ad-title button{
+    height: 45px;
+    width: 140px;
+    font-size: 17px;  
+    background-color: #e58487;
+    border: none;
+    color: #fff;
+}
+.con-5 .ad-title button:hover{  
+    background-color: #555555;
+    color: #fff;
+}
+/* Contain 6 */
+.con-6{
+    height: 850px;
+    margin-top: 50px;
+}
+.r1{
+    height: 85px;
+}
+.con-6 #slide-1{
+    width: 100%;
+    height: 700px;
+}
+.con-6 #slide-2{
+    width: 100%;
+    height: 700px;
+    display: none;
+}
+.con-6 #slide-3{
+    height: 700px;
+    width: 100%;
+    display: none;
+}
+.r1 h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #202020;
+    margin-bottom: 4px;
+}
+.r1 hr{
+    border: 2px solid #e58487;
+    width: 143px;
+    margin: 0 auto;
+    background-color: #e58487;
+}
+.pro-change{
+    height: 32px;
+    width: 100%;
+    padding-top: 5px;
+}
+.con-6 p{
+    height: 32px;
+    padding: 4px 20px;
+    text-decoration: none;
+    color: #202020;
+    font-weight: 600;
+    cursor: pointer;
+}
+.con-6 p:hover{
+    background-color: #e58487;
+    color: #fff;
+}
+.con-6 p .active{
+    background-color: #e58487;
+    color: #fff;
+}
+.r2{
+    width: 90%;
+    height: 360px;
+}
+.image{
+    height: 260px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+}
+.image img{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+.image .coner-left{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    left: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    color: #e58487;
+    text-transform: uppercase;
+}
+.image .coner-right{
+    position: absolute;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #e58487;
+    color: #fff;
+    right: 10px;
+    top: 10px;
+}
+.image .cart-1{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75%;
+    opacity: 0;
+}
+.image .cart-1 i{
+    background-color:#444444B3;
+    padding: 6px 10px;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.image .cart-1 i:hover{
+    background-color: #e58487;
+    color: #fff;
+}
+.image .cart-2{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    bottom: 0;
+    opacity: 0;
+}
+.image .cart-2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 600;
+    padding: 0 10px;
+    background-color:#444444B3;
+}
+.image .cart-2 a:hover{
+    background-color:#444444;
+}
+.image .cart-2 i{
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+.image:hover .cart-1{
+    opacity: 1;
+    top: 45%;
+    transition: all 1s ease;
+}
+.image:hover .cart-2{
+    opacity: 1;
+    bottom: 10%;
+    transition: all 1s ease;
+}
+.price{
+    width: 100%;
+    height: 110px;
+    padding-left: 20px;
+    padding-top: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.price .star{
+    width: 100%;
+    height: 15px;
+    margin-bottom: 9px;
+}
+.price .star .star-1, .star-2, .star-3, .star-4, .star-5{
+    font-size: 13px;
+    color: #ffc107;
+    padding-bottom: 6px;
+    padding-right: 4px;
+}
+.price .star .star-5{
+    font-size: 13px;
+    color: lightgray;
+}
+.price a{
+    font-size: 15px;
+    color: #a8a7a7;
+    padding-left: 0;
+    background-color: #fff;
+    text-decoration: none;
+}
+.price a:hover{
+    color: #e58487;
+    text-decoration: none;
+}
+.price .span{
+    color: #202020;
+    font-weight: 700;
+    font-size: 19px;
+    margin-right: 7px;
+    margin-top: 4px;
+}
+.price s{
+    font-size: 19px;
+    text-decoration: line-through;
+    color: #777;
+    font-weight: 400;
+}
+/* Contain 7 */
+.con-7{
+    width: 100%;
+    height: 450px;
+    background-image: url("https://loopinfosol.in/themeforest/ekka-html-v32/ekka-html/assets/images/testimonial/testi_bg.jpg");
+    padding: 30px 0;
+}
+.con-7 .path{
+    height: 87px;
+    width: 63px;
+}   
+.con-7 .path i{
+    color: #e58487;
+    font-size: 38px;
+    padding: 14px 16px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.con-7 .p-1{
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.8;
+    letter-spacing: 0.7px;
+}
+.con-7 .p-1 .left, .right{
+    font-size: 21px;
+    margin-left: 10px;
+    color: #e58487;
+}
+.con-7 .p-1 p{
+    font-size: 15.5px;
+    color: #777777;
+    line-height: 1.8;
+    letter-spacing: 0.7px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.con-7 .image{
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 40px;   
+}
+.con-7 .image .image-1, .image-2, .image-3{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.con-7 .image .image-1 img, .image-2 img, .image-3 img{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.btn-outline-primary {
+    background-color: #e58487;
+}
+footer a{
+    text-decoration: none;
+}
+#toTop{
+    width: 50px;
+    height: 50px;
+    background-color: #202020;
+}
+@media (max-width: 1200px){
+    .navbar i{
+        font-size: 20px;
+        color: #b8b6b6;
+    }
+    .Slide{
+        width: 90%;
+        height: 330px;
+        margin: auto;
+        margin-bottom: 0;
+    }
+    .Slide .sli{
+        width: 310px;
+        height: 365px;
+        margin-right: 10px;
+    }
+    .con-4 .image{
+        width: 100%;
+        height: 240px;
+    }
+    .con-4 .price a{
+        font-size: 16px;
+    }
+    .con-4 .price i{
+        font-size: 13px;
+    }
+    .con-4 .price .span{
+        font-size: 18px;
+        margin-right: 7px;
+        margin-top: 4px;
+    }
+    .con-4 .price s{
+        font-size: 18px;
+    }
+    /* Container 5 */
+    .con-5{
+        height: 380px;
+        width: 100%;
+        margin-top: -80px;
+        background-size: 100% 390px;
+        padding: 0 70px;
+    }
+    .con-5 .ad-title{
+        width: 500px;
+        height: 210px;
+    }
+    .con-5 .ad-title h2{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .con-5 .ad-title h1{
+        font-size: 40px;
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+    .con-5 .ad-title span{
+        font-size: 16px;
+    }
+    .con-5 .ad-title button{
+        height: 38px;
+        width: 140px;
+        font-size: 14px;
+        padding: 0 30px;
+    }
+    .r2{
+        width: 98%;
+        height: 340px;
+    }
+    .image{
+        height: 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+    }
+    .image .coner-left{
+        font-size: 14px;
+        left: 10px;
+        top: 10px;
+        padding: 5px 10px;
+    }
+    .image .coner-right{
+        font-size: 14px;
+        padding: 5px 10px;
+        right: 10px;
+        top: 10px;
+    }
+    .image .cart-1{
+        width: 100%;
+        height: 30px;
+        top: 75%;
+    }
+    .image .cart-1 i{
+        padding: 5px 10px;
+        font-size: 17px;
+        margin: 0 10px;
+    }
+    .image .cart-2{
+        width: 100%;
+        height: 28px;
+    }
+    .image .cart-2 a{
+        font-size: 13px;
+        padding-left: 10px;
+        padding: 0 10px;
+    }
+    .image .cart-2 i{
+        font-size: 14px;
+        padding-right: 10px;
+        padding-top: 8px;
+    }
+    .price{
+        width: 100%;
+        height: 100px;
+        padding-left: 20px;
+        padding-top: 6px;
+    }
+    .price .star{
+        width: 100%;
+        height: 15px;
+        margin-bottom: 9px;
+    }
+    .price .star .star-1, .star-2, .star-3, .star-4, .star-5{
+        font-size: 13px;
+        padding-bottom: 6px;
+        padding-right: 4px;
+    }
+    .price .star .star-5{
+        font-size: 13px;
+        color: lightgray;
+    }
+    .price a{
+        font-size: 15px;
+        color: #777777;
+        padding-left: 0;
+        text-decoration: none;
+    }
+    .price .span{
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 7px;
+        margin-top: 4px;
+    }
+    .price s{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .con-6{
+        height: 800px;
+        margin-top: 50px;
+    }
+   
+}
+
+
+/* ipad*/
+@media (max-width: 1025px ){
+    .navbar{
+        height: auto;
+    }
+    .navbar img{
+        margin-top: 20px;
+    }
+    .navbar i{
+        margin-top: -8px !important;
+    }
+    .con-1 {
+        margin-bottom: 4px;
+    }
+    
+    .con-2{
+        margin-top: 0;
+    }
+    .con-3{
+        margin-top: 10px;
+        height: 370px !important; 
+        width: 100%;
+        margin-top: 200px;
+    }
+    .con-3 .carousel-item{
+        height: 365px !important;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    .con-3 .descrip{
+        width: 300px;
+        height: 200px;
+        margin-top: 85px;
+        margin-left: 66px;
+    }
+    .con-3 .descrip h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .con-3 .descrip hr{
+        width: 70px;
+        height: 2px;
+        margin-top: -15px;
+    }
+    .con-3 .descrip h1{
+        font-size: 26px;
+        font-weight: bolder;
+    }
+    .con-3 .descrip p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .con-3 .descrip button{
+        height: 36px;
+        width: 120px;
+        font-size: 14px;
+    }
+    .con-4{
+        height: 450px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    .con-4 h2{
+        font-size: 22px;
+    }
+    .con-4 hr{
+        width: 150px;
+        margin-bottom: 13px;
+    }
+    .Slide{
+        width: 90%;
+        height: 330px;
+        margin: auto;
+        margin-bottom: 0;
+    }
+    .Slide .sli{
+        width: 310px;
+        height: 360px;
+        margin-right: 20px;
+    }
+    .con-4 .image{
+        width: 100%;
+        height: 240px;
+    }
+    .con-4 .price a{
+        font-size: 15px;
+    }
+    .con-4 .price i{
+        font-size: 13px;
+    }
+    .con-4 .price .span{
+        font-size: 17px;
+        margin-right: 7px;
+        margin-top: 4px;
+    }
+    .con-4 .price s{
+        font-size: 17px;
+    }
+    /* Container 5 */
+    .con-5{
+        height: 320px;
+        width: 100%;
+        margin-top: -10px;
+        background-size: 100% 300px;
+        padding: 0 30px;
+    }
+    .con-5 .ad-title{
+        width: 360px;
+        height: 200px;
+    }
+    .con-5 .ad-title h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .con-5 .ad-title h1{
+        font-size: 30px;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+    .con-5 .ad-title span{
+        font-size: 14px;
+    }
+    .con-5 .ad-title button{
+        height: 36px;
+        width: 120px;
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    .r1{
+        height: 80px;
+    }
+    .r1 h2{
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .r1 hr{
+        border: 2px solid #e58487;
+        width: 143px;
+        margin: 0 auto;
+    }
+    .pro-change{
+        height: 32px;
+        width: 100%;
+        padding-top: 5px;
+    }
+    .con-6 a{
+        height: 30px;
+        padding: 4px 15px;
+    }
+    
+   
+}
+/* ipad mini*/
+@media (max-width: 780px){
+    .navbar{
+        padding: 0 20px;
+    }
+    .navbar img{
+        margin-top: 20px;
+    }
+    .navbar i{
+        margin-top: -2px !important;
+    }
+    .col-sm-12 i{
+        font-size: 20px;
+        padding-left: 20px;
+        margin-top: -10px;
+        margin-bottom: 2px;
+        color: #b8b6b6;
+    }
+    .btn{
+        background-color: #e58487 !important;
+        border-color: white !important;
+        color: white !important;
+    }
+    .con-3{
+        height: 400px;
+        margin-top: 0;
+        background-color: #f5f5f5;
+        margin-top: 185px;
+    }
+    .con-3 .carousel-item{
+        height: 400px;
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+    .icon-phone{
+        display: none;
+    }
+    .con-4{
+        margin-top: 40px;
+    }
+    /* Container 5 */
+    .con-5{
+        height: 300px;
+        width: 100%;
+        margin-top: -20px;
+        background-size: 100% 300px;
+        padding: 0px 30px;
+    }
+    .con-5 .ad-title{
+        width: 300px;
+        height: 200px;
+        margin-top: 30px;
+    }
+    .con-5 .ad-title h2{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .con-5 .ad-title h1{
+        font-size: 25px;
+        margin-bottom: 2px;
+    }
+    .con-5 .ad-title span{
+        font-size: 13px;
+    }
+    .con-5 .ad-title button{
+        height: 34px;
+        width: 110px;
+        font-size: 13px;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    .con-6{
+        height: 740px;
+    }
+    .r2{
+        width: 96%;
+        height: 315px;
+    }
+    .image{
+        height: 220px;
+    }
+    .image .coner-left{
+        font-size: 13px;
+        left: 10px;
+        top: 10px;
+        padding: 3px 10px;
+    }
+    .image .coner-right{
+        font-size: 13px;
+        padding: 3px 10px;
+        right: 10px;
+        top: 10px;
+    }
+    .image .cart-1{
+        width: 100%;
+        height: 30px;
+        top: 75%;
+    }
+    .image .cart-1 i{
+        padding: 3px 10px;
+        font-size: 17px;
+        margin: 0 10px;
+    }
+    .image .cart-2{
+        width: 100%;
+        height: 28px;
+    }
+    .image .cart-2 a{
+        font-size: 13px;
+        padding-left: 10px;
+        padding: 0 10px;
+    }
+    .image .cart-2 i{
+        font-size: 14px;
+        padding-right: 10px;
+        padding-top: 8px;
+    }
+    .price{
+        width: 100%;
+        height: 85px;
+        padding-left: 20px;
+        padding-top: 2px;
+    }
+    .price .star{
+        width: 100%;
+        height: 18px;
+        margin-bottom: 3px;
+    }
+    .price .star .star-1, .star-2, .star-3, .star-4, .star-5{
+        font-size: 13px;
+        padding-bottom: 2px;
+        padding-right: 4px;
+    }
+    .price .star .star-5{
+        font-size: 13px;
+    }
+    .price a{
+        font-size: 14px;
+        color: #a8a7a7;
+        padding-left: 0;
+    }
+    .price .span{
+        font-size: 17px;
+        margin-right: 7px;
+        margin-top: 4px;
+    }
+    .price s{
+        font-size: 16px;
+    }
+    /* Contain 7 */
+    .con-7{
+        width: 100%;
+        height: 390px;
+        padding: 30px 0;
+    }
+    .con-7 .path{
+        height: 87px;
+        width: 63px;
+    }   
+    .con-7 .path i{
+        font-size: 38px;
+        padding: 14px 16px;
+        border-radius: 50%;
+    }
+    .con-7 .p-1{
+        font-size: 14px;
+    }
+    .con-7 .p-1 .left, .right{
+        font-size: 21px;
+        margin-left: 10px;
+    }
+    .con-7 .p-1 p{
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        font-weight: 300;
+        padding-left: 10px;
+    }
+    .con-7 .image{
+        width: 100%;
+        height: 120px;
+        column-gap: 10px;
+        margin-top: -10px;   
+    }
+    .con-7 .image .image-1, .image-2, .image-3{
+        width: 75px;
+        height: 75px;
+    }
+    .con-7 .image .image-1 img, .image-2 img, .image-3 img{
+        width: 75px;
+        height: 75px;
+    }
+   
+}
+@media (max-width: 580px){
+    .navbar{
+        padding: 0 0 8px 0 !important;
+    }
+    .navbar img{
+        margin-top: 15px;
+        margin-left: 110px;
+        width: 130px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .col-sm-12 i{
+        font-size: 18px;
+        padding-left: 20px;
+        margin-bottom: 18px;
+        color: #b8b6b6;
+    }
+    .btn{
+        background-color: #e58487 !important;
+        border-color: white !important;
+        color: white !important;
+    }
+    .con-2 {
+        display: none;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar .user{
+        display: none;
+    }
+    .navbar .cart{
+        display:none;
+    }
+    .navbar .heart{
+        display: none;
+    }
+    .icon-phone{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon-phone .left{
+        height: 100%;
+        padding: 12px 0px;
+    }
+    .icon-phone .right{
+        height: 100%;
+        text-align: right;
+        padding: 12px 10px;
+    }
+    .con-3{
+        margin-top: 175px;
+        height: 320px !important; 
+        width: 100%;
+    }
+    .con-3 .carousel-item{
+        height: 310px !important;
+        width: 100%;
+        background-size: 170% 100%;
+        background-position-x: -200px;
+    }
+    .con-3 .descrip{
+        width: 300px;
+        height: 160px;
+        margin: 80px auto;
+        padding-left: 20px;
+        background-color: rgba(255, 255, 255, 0.637);
+    }
+    .con-3 .descrip h2{
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+    .con-3 .descrip hr{
+        width: 50px;
+        height: 2px;
+        margin-top: -9px;
+    }
+    .con-3 .descrip h1{
+        font-size: 18px;
+    }
+    .con-3 .descrip p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .con-3 .descrip button{
+        height: 30px;
+        width: 90px;
+        font-size: 12px;
+    }
+    .Slide{
+        width: 90%;
+        height: 325px;
+        margin: auto;
+        margin-bottom: 0;
+    }
+    .Slide .sli{
+        width: 305px;
+        height: 365px;
+        margin-right: 14px;
+    }
+    .con-4 .image{
+        width: 100%;
+        height: 230px;
+    }
+    .con-4 .price a{
+        font-size: 15px;
+    }
+    .con-4 .price .star .star-1{
+        font-size: 11px;
+    }
+    .con-4 .price .star .star-2{
+        font-size: 11px;
+    }
+    .con-4 .price .star .star-3{
+        font-size: 11px;
+    }
+    .con-4 .price .star .star-4{
+        font-size: 11px;
+    }
+    .con-4 .price .star .star-5{
+        font-size: 11px;
+    }
+    .con-4 .price .span{
+        font-size: 18px;
+        margin-right: 7px;
+        margin-top: 4px;
+    }
+    .con-4 .price s{
+        font-size: 18px;
+    }
+    .con-5{
+        height: 250px;
+        width: 100%;
+        margin-top: -40px;
+        background-size: 100% 190px;
+        padding: 0px 30px;
+    }
+    .con-5 .ad-title{
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+    .con-5 .ad-title h2{
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    .con-5 .ad-title h1{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .con-5 .ad-title span{
+        display: none;
+    }
+    .con-5 .ad-title button{
+        height: 30px;
+        width: 90px;
+        font-size: 13px;
+        padding: 0;
+        margin-top: -10px;
+    }
+    .con-6{
+        height: 1730px;
+    }
+    .r1{
+        height: 150px;
+    }
+    .r1 .pro-change {
+        margin-top: -60px;
+    }
+    .r1 .pro-change p{
+        width: 160px;
+        font-size: 15px;
+        margin: 3px auto;
+    }
+    .r2{
+        margin-top: 5px;
+    }
+    .r2 .image{
+        width: 300px;
+        margin: auto;
+    }
+    .r2 .price{
+        width: 300px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    /* Contain 7 */
+    .con-7{
+        width: 100%;
+        height: 390px;
+        padding: 10px 0;
+    }
+    .con-7 .path{
+        height: 50px;
+        width: 63px;
+    }   
+    .con-7 .path i{
+        font-size: 38px;
+        padding: 14px 16px;
+        border-radius: 50%;
+    }
+    .con-7 .p-1{
+        font-size: 12px;
+    }
+    .con-7 .p-1 .left, .right{
+        font-size: 21px;
+        margin-left: 0px;
+    }
+    .con-7 .p-1 p{
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        font-weight: 300;
+        padding-left: 10px;
+    }
+    .con-7 .image{
+        height: 100px;
+        column-gap: 5px;
+        margin-top: -20px;   
+    }
+    .con-7 .image .image-1, .image-2, .image-3{
+        width: 65px;
+        height: 65px;
+    }
+    .con-7 .image .image-1 img, .image-2 img, .image-3 img{
+        width: 65px;
+        height: 65px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1025px){
+    .con-3{
+        margin-top: 100px !important;
+    }
+}
+@media (max-width: 767px) and (min-width: 581px){
+    .con-6{
+        height: 1040px;
+    }
+}
