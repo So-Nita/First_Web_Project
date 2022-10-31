@@ -6,8 +6,8 @@ html{
     scroll-behavior: smooth;
 }
 .btn-outline-primary{
-    background-color: var(--pink) !important;
-    border-color: var(--pink) !important;
+    background-color: #e58487 !important;
+    border-color: #e58487 !important;
     color: #fff !important;
 }
 *{
@@ -134,6 +134,7 @@ body{
     margin-top: 5px;
     font-weight: 700;
 }
+
 /*  */
 .con-2{
     height: 50px;
@@ -727,6 +728,19 @@ footer a{
     height: 50px;
     background-color: #202020;
 }
+.modal{
+    margin-top: 120px;
+}
+.modal-content{
+    height: 330px;
+    background-image: url("https://img.ltwebstatic.com/images3_acp/2022/05/22/16531872299b0fbd1ca37e72207ab94089f95607b5.gif");
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 330px;
+}
+/* Cart */
+
 @media (max-width: 1200px){
     .navbar i{
         font-size: 20px;

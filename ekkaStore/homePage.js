@@ -54,3 +54,5 @@ const sli3 = document.getElementById("slide-3")
         sli1.style.display="none";
         sli2.style.display="none";
     }
+
+    

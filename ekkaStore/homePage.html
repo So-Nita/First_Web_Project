@@ -1,22 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Link to another pages -->
+    <link rel="stylesheet" href="./homePage.css">
+    <!-- <link rel="stylesheet" href="./product.html"> -->
+    <link rel="stylesheet" href="./login.html">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./test.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <title>Hello, world!</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
     <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top col-sm-12" style="background-color: #fff;">
     <!-- phone screen nav-menu -->
-      <div class="icon-phone d-lg-none d-md-none bg-danger col-sm-12">
+      <div class="icon-phone d-lg-none d-md-none bg-light col-sm-12">
         <div class="left col-6 bg-light"><i id="menu" onclick="ClickDrop()" class="fa-solid fa-bars fs-2"></i></div>
         <div class="right col-6 bg-light">
           <i class="fa-regular fa-heart fs-4"></i>
@@ -28,13 +34,13 @@
     <div id="drop" class="Drop-down">
       <div class="title">
           <span>My Menu</span>
-          <i  id="move" onclick="MoveClick()" class="fa-solid fa-xmark"></i>
+          <i id="move" onclick="MoveClick()" class="fa-solid fa-xmark"></i>
       </div>
       <div class="menu-down">
           <ul>
               <li><a href="#">Home</a><i class="fa-regular fa-plus"></i></li>
+              <li><a href="./product.html">Products</a><i class="fa-regular fa-plus"></i></li>
               <li><a href="#">Categories</a><i class="fa-regular fa-plus"></i></li>
-              <li><a href="#">Products</a><i class="fa-regular fa-plus"></i></li>
               <li><a href="#">Others</a><i class="fa-regular fa-plus"></i></li>
               <li><a href="#">Pages</a><i class="fa-regular fa-plus"></i></li>
               <li><a href="#">Blog</a><i class="fa-regular fa-plus"></i></li>
@@ -43,26 +49,24 @@
               
               <div class="choose">
                  <div class="language">LANGUAGE<i class="fa-regular fa-plus"></i>
-                      
                   </div>
                   <div class="currency">CURRENCY<i class="fa-regular fa-plus"></i>
-                      
                   </div>
               </div>
             </ul>
           </div>
         </div>
     <!--  -->
-        <div class="col-lg-4 col-sm-12 justify-content-center d-flex"><img class="" src="https://loopinfosol.in/themeforest/ekka-html-v32/ekka-html/assets/images/logo/logo-2.png" alt=""></div>
+        <div class="col-lg-4 col-sm-12 justify-content-center d-md-flex d-sm-block"><img class="" src="https://loopinfosol.in/themeforest/ekka-html-v32/ekka-html/assets/images/logo/logo-2.png" alt=""></div>
         <div class="container-fluid row d-flex justify-content-lg-end p-0 m-0"> 
         <div class="col-sm-12 ">
             <form class="form d-lg-flex d-none d-md-none d-sm-block float-sm-start pl-md-5 pt-md-3 w-50 position-sticky" >
                 <input class="form-control me-2 d-md-block d-sm-none" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-primary d-md-block d-sm-none" type="submit">Search</button>
             </form>
-          <i class="fa-solid fa-user float-end pl-lg-0 px-md-2 pt-lg-3 pt-md-4 px-sm-2 py-2 mt-md-1 user"><span style="font-size: 16.5px;" class="fw-light p-lg-1 d-lg-inline-block d-md-none d-sm-none span-1">Account</span></i>
-          <i class="fa-solid fa-cart-plus float-end px-lg-3 pt-lg-3 pt-md-4 px-md-4 px-sm-4 mt-md-1 py-2 cart"><span style="font-size: 16.5px;" class="fw-light p-lg-1 d-lg-inline-block d-md-none d-sm-none span-2">Cart</span></i>
-          <i class="fa-regular fa-heart float-end px-lg-2 pt-lg-3 px-md-2 px-sm-2 pt-md-4 mt-md-1 py-2 heart"><span style="font-size: 16.5px;" class="fw-light p-lg-1 d-lg-inline-block d-md-none d-sm-none span-3">Wishlist</span></i>
+          <i class="fa-solid fa-user float-end pl-lg-0 px-md-2 pt-lg-3 pt-md-4 px-sm-2 py-2 mt-md-1 user"><a href="./login.html" style="color: #b8b6b6; font-size: 16.5px; text-decoration: none;" class="fw-light p-lg-1 d-lg-inline-block d-md-none d-sm-none span-1" id="btn-cart" type="button" >Account</a></i>
+          <i class="fa-solid fa-cart-plus float-end px-lg-3 pt-lg-3 pt-md-4 px-md-4 px-sm-4 mt-md-1 py-2 cart"><a href="#" style="color: #b8b6b6;font-size: 16.5px; text-decoration: none;" class="fw-light p-lg-1 d-lg-inline-block d-md-none d-sm-none span-2">Cart</a></i>
+          <i class="fa-regular fa-heart float-end px-lg-2 pt-lg-3 px-md-2 px-sm-2 pt-md-4 mt-md-1 py-2 heart"><a href="#" style="color: #b8b6b6; font-size: 16.5px; text-decoration: none;" class="fw-light p-lg-1 d-lg-inline-block d-md-none d-sm-none span-3">Wishlist</a></i>
           <!-- <a class="navbar-brand float-lg-start float-end" href="#">Navbar</a> -->
           <button class="navbar-toggler float-sm-start mb-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -72,8 +76,8 @@
             <ul class="navbar-nav mb-2 mb-lg-0 d-lg-none">
               <li class="nav-item">
                 <a class="nav-link active pt-md-5" aria-current="page" href="#">Home</a>
-                <a class="nav-link " href="#">CATEGORIES</a>
-                <a class="nav-link" href="#">PRODUCTS</a>
+                <a class="nav-link " href="./product.html">PRODUCTS</a>
+                <a class="nav-link" href="#">CATEGORIES</a>
                 <a class="nav-link " href="#">CATEGORIES</a>
                 <a class="nav-link" href="#">PRODUCTS</a>
                 <a class="nav-link " href="#">CATEGORIES</a>
@@ -94,8 +98,8 @@
           <nav>
             <ul>
               <li><a href="#">HOME</a></li>
+              <li><a href="./product.html">PRODUCTS</a></li>
               <li><a href="#">CATEGORIES</a></li>
-              <li><a href="#">PRODUCTS</a></li>
               <li><a href="#">PAGES</a></li>
               <li><a href="#">OTHERS</a></li>
               <li><a href="#">BLOG</a></li>
@@ -1071,7 +1075,18 @@
     <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Shopify.com</a>
     </div>
   </footer>
+  <!--Pop up  -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+          </div>
+      </div>
+  </div>
   
+  <!--  -->
   </div>
     <script src="./test.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -1079,5 +1094,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
+    <script>
+      $(document).ready(function(){
+        $("#myModal").modal('show');
+      });
+    </script>
   </body>
 </html>

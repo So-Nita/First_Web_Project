@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400&family=Exo+2&family=Hanuman&family=Poppins&family=Roboto&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    color: #555;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.products{
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,auto));
+    grid-gap: 50px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.products{
+    padding: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.products img{
+    width: 100%;
+    /* display: block; */
+}
+.products .id{
+    text-align: center;
+}
+.products .name{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.products .price{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #9b0b03;
+    padding-top: 30px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
